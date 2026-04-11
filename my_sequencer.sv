@@ -1,0 +1,14 @@
+`include "uvm_macros.svh"
+import uvm_pkg::*;
+import pack1::*;
+class my_sequencer extends uvm_sequencer #(my_sequence_item);
+   // Factory Registeration
+    `uvm_component_utils(my_sequencer) 
+
+    // Factory Construction
+    function new(string name = "my_sequencer", uvm_component parent = null);
+      super.new(name, parent);
+    endfunction
+
+   
+  endclass

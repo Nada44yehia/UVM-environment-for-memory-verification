@@ -1,0 +1,306 @@
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /top/in1
+# === Design Unit: work.intf
+# =================================================================================
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                        146       145         1    99.31%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /top/in1 --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                              Rst_n           1           0       50.00 
+# 
+# Total Node Count     =         73 
+# Toggled Node Count   =         72 
+# Untoggled Node Count =          1 
+# 
+# Toggle Coverage      =      99.31% (145 of 146 bins)
+# 
+# =================================================================================
+# === Instance: /top/DUT
+# === Design Unit: work.memory
+# =================================================================================
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         5         5         0   100.00%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /top/DUT
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File memory.sv
+# ------------------------------------IF Branch------------------------------------
+#     8                                         72     Count coming in to IF
+#     8               1                          1     
+#     16              1                         71     
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     18                                        71     Count coming in to IF
+#     18              1                         17     
+#     23              1                         46     
+#     29              1                          8     
+# Branch totals: 3 hits of 3 branches = 100.00%
+# 
+# 
+# Condition Coverage:
+#     Enabled Coverage              Bins   Covered    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Conditions                       4         4         0   100.00%
+# 
+# ================================Condition Details================================
+# 
+# Condition Coverage for instance /top/DUT --
+# 
+#   File memory.sv
+# ----------------Focused Condition View-------------------
+# Line       18 Item    1  (i1.write_enable && ~i1.read_enable)
+# Condition totals: 2 of 2 input terms covered = 100.00%
+# 
+# ----------------Focused Condition View-------------------
+# Line       23 Item    1  (i1.read_enable && ~i1.write_enable)
+# Condition totals: 2 of 2 input terms covered = 100.00%
+# 
+# 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                      10        10         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /top/DUT --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File memory.sv
+#     6               1                         72     
+#     10              1                         17     
+#     11              1                         16     
+#     12              1                          1     
+#     13              1                          1     
+#     20              1                         17     
+#     25              1                         46     
+#     26              1                         46     
+#     31              1                          8     
+#     32              1                          8     
+# 
+# =================================================================================
+# === Instance: /top
+# === Design Unit: work.top
+# =================================================================================
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                      11        11         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /top --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File top.sv
+#     15              1                          1     
+#     16              1                        142     
+#     16              2                        141     
+#     25              1                          1     
+#     28              1                          1     
+#     31              1                          1     
+#     32              1                          1     
+#     38              1                          1     
+#     38              2                          1     
+#     44              1                          1     
+#     45              1                          1     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                          4         4         0   100.00%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /top --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+# 
+# Total Node Count     =          2 
+# Toggled Node Count   =          2 
+# Untoggled Node Count =          0 
+# 
+# Toggle Coverage      =     100.00% (4 of 4 bins)
+# 
+# =================================================================================
+# === Instance: /pack1
+# === Design Unit: work.pack1
+# =================================================================================
+# 
+# Covergroup Coverage:
+#     Covergroups                      1        na        na   100.00%
+#         Coverpoints/Crosses          6        na        na        na
+#             Covergroup Bins         41        41         0   100.00%
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /pack1/my_subscriber/cvr_gp                     100.00%        100          -    Covered              
+#     covered/total bins:                                    41         41          -                      
+#     missing/total bins:                                     0         41          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint cp_addr_write                          100.00%        100          -    Covered              
+#         covered/total bins:                                16         16          -                      
+#         missing/total bins:                                 0         16          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin addr_bins[0]                                    1          1          -    Covered              
+#         bin addr_bins[1]                                    1          1          -    Covered              
+#         bin addr_bins[2]                                    1          1          -    Covered              
+#         bin addr_bins[3]                                    1          1          -    Covered              
+#         bin addr_bins[4]                                    1          1          -    Covered              
+#         bin addr_bins[5]                                    2          1          -    Covered              
+#         bin addr_bins[6]                                    2          1          -    Covered              
+#         bin addr_bins[7]                                    2          1          -    Covered              
+#         bin addr_bins[8]                                    2          1          -    Covered              
+#         bin addr_bins[9]                                    1          1          -    Covered              
+#         bin addr_bins[10]                                   2          1          -    Covered              
+#         bin addr_bins[11]                                   1          1          -    Covered              
+#         bin addr_bins[12]                                   1          1          -    Covered              
+#         bin addr_bins[13]                                   1          1          -    Covered              
+#         bin addr_bins[14]                                   1          1          -    Covered              
+#         bin addr_bins[15]                                   1          1          -    Covered              
+#     Coverpoint cp_addr_read                           100.00%        100          -    Covered              
+#         covered/total bins:                                16         16          -                      
+#         missing/total bins:                                 0         16          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin addr_bins_r[0]                                  1          1          -    Covered              
+#         bin addr_bins_r[1]                                  2          1          -    Covered              
+#         bin addr_bins_r[2]                                  1          1          -    Covered              
+#         bin addr_bins_r[3]                                  1          1          -    Covered              
+#         bin addr_bins_r[4]                                  2          1          -    Covered              
+#         bin addr_bins_r[5]                                  2          1          -    Covered              
+#         bin addr_bins_r[6]                                  2          1          -    Covered              
+#         bin addr_bins_r[7]                                  2          1          -    Covered              
+#         bin addr_bins_r[8]                                  2          1          -    Covered              
+#         bin addr_bins_r[9]                                  2          1          -    Covered              
+#         bin addr_bins_r[10]                                 1          1          -    Covered              
+#         bin addr_bins_r[11]                                 1          1          -    Covered              
+#         bin addr_bins_r[12]                                 2          1          -    Covered              
+#         bin addr_bins_r[13]                                 2          1          -    Covered              
+#         bin addr_bins_r[14]                                 2          1          -    Covered              
+#         bin addr_bins_r[15]                                 2          1          -    Covered              
+#     Coverpoint cp_read                                100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read_on                                        27          1          -    Covered              
+#         bin read_off                                       21          1          -    Covered              
+#     Coverpoint cp_write                               100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin write_on                                       21          1          -    Covered              
+#         bin write_off                                      27          1          -    Covered              
+#     Coverpoint cp_valid                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin valid                                          23          1          -    Covered              
+#     Cross cross_rw                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin read_only                                  23          1          -    Covered              
+#             bin write_only                                 17          1          -    Covered              
+#             bin read_write                                  4          1          -    Covered              
+#             bin <read_off,write_off>                        4          1          -    Covered              
+# 
+# COVERGROUP COVERAGE:
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /pack1/my_subscriber/cvr_gp                     100.00%        100          -    Covered              
+#     covered/total bins:                                    41         41          -                      
+#     missing/total bins:                                     0         41          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint cp_addr_write                          100.00%        100          -    Covered              
+#         covered/total bins:                                16         16          -                      
+#         missing/total bins:                                 0         16          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin addr_bins[0]                                    1          1          -    Covered              
+#         bin addr_bins[1]                                    1          1          -    Covered              
+#         bin addr_bins[2]                                    1          1          -    Covered              
+#         bin addr_bins[3]                                    1          1          -    Covered              
+#         bin addr_bins[4]                                    1          1          -    Covered              
+#         bin addr_bins[5]                                    2          1          -    Covered              
+#         bin addr_bins[6]                                    2          1          -    Covered              
+#         bin addr_bins[7]                                    2          1          -    Covered              
+#         bin addr_bins[8]                                    2          1          -    Covered              
+#         bin addr_bins[9]                                    1          1          -    Covered              
+#         bin addr_bins[10]                                   2          1          -    Covered              
+#         bin addr_bins[11]                                   1          1          -    Covered              
+#         bin addr_bins[12]                                   1          1          -    Covered              
+#         bin addr_bins[13]                                   1          1          -    Covered              
+#         bin addr_bins[14]                                   1          1          -    Covered              
+#         bin addr_bins[15]                                   1          1          -    Covered              
+#     Coverpoint cp_addr_read                           100.00%        100          -    Covered              
+#         covered/total bins:                                16         16          -                      
+#         missing/total bins:                                 0         16          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin addr_bins_r[0]                                  1          1          -    Covered              
+#         bin addr_bins_r[1]                                  2          1          -    Covered              
+#         bin addr_bins_r[2]                                  1          1          -    Covered              
+#         bin addr_bins_r[3]                                  1          1          -    Covered              
+#         bin addr_bins_r[4]                                  2          1          -    Covered              
+#         bin addr_bins_r[5]                                  2          1          -    Covered              
+#         bin addr_bins_r[6]                                  2          1          -    Covered              
+#         bin addr_bins_r[7]                                  2          1          -    Covered              
+#         bin addr_bins_r[8]                                  2          1          -    Covered              
+#         bin addr_bins_r[9]                                  2          1          -    Covered              
+#         bin addr_bins_r[10]                                 1          1          -    Covered              
+#         bin addr_bins_r[11]                                 1          1          -    Covered              
+#         bin addr_bins_r[12]                                 2          1          -    Covered              
+#         bin addr_bins_r[13]                                 2          1          -    Covered              
+#         bin addr_bins_r[14]                                 2          1          -    Covered              
+#         bin addr_bins_r[15]                                 2          1          -    Covered              
+#     Coverpoint cp_read                                100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read_on                                        27          1          -    Covered              
+#         bin read_off                                       21          1          -    Covered              
+#     Coverpoint cp_write                               100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin write_on                                       21          1          -    Covered              
+#         bin write_off                                      27          1          -    Covered              
+#     Coverpoint cp_valid                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin valid                                          23          1          -    Covered              
+#     Cross cross_rw                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin read_only                                  23          1          -    Covered              
+#             bin write_only                                 17          1          -    Covered              
+#             bin read_write                                  4          1          -    Covered              
+#             bin <read_off,write_off>                        4          1          -    Covered              
+# 
+# TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+# 
+# Total Coverage By Instance (filtered view): 99.86%
+# 
